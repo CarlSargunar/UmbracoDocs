@@ -19,8 +19,9 @@ Video Tutorial
 ```
 Templates                    Short Name               Language          Tags
 ------------------------------------------------------------------------------------------------------
+Umbraco Package              umbracopackage           [C#]              Web/CMS/Umbraco/Package/Plugin                    
+Umbraco Package...           umbracopackage-rcl       [C#]              Web/CMS/Umbraco/Package/Plugin/Razor Class Library
 Umbraco Project              umbraco                  [C#]              Web/CMS/Umbraco
-Umbraco Package              umbracopackage           [C#]              Web/CMS/Umbraco/Package/Plugin
 ```
 
 {% hint style="info" %}
