@@ -77,6 +77,11 @@ Be careful with this command, as it deletes your database and all data in it.
 * `docker compose up --build`: Rebuild the images and start the containers. This is useful if you have made changes to the project and want to see them reflected on the running site.
 * `docker compose watch`: Start the containers and watch the default models folder. This means that if the project uses a source-code models builder the images are automatically rebuilt and restarts when you change the models.
 
+{% hint style="warning" %}
+If you get an error when running docker
+{% endhint %}
+
+
 ## Details
 
 The docker compose file uses bind mounts for the following folders:
