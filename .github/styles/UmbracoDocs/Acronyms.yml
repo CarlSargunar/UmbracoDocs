@@ -87,3 +87,6 @@ exceptions:
     - JPG
     - JPEG
     - BCC
+    - SSD
+    - ASCII
+    - CMD

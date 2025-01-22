@@ -18,6 +18,32 @@ If you are upgrading to a new major version you can find the details about the b
 
 This section contains the release notes for Umbraco Deploy 14 including all changes for this version.
 
+#### [14.2.2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.2) (December 23rd 2024)
+
+* Ensure environment-to-environment actions are executed asynchronously on background job (fixes timeout issues on large deployments) [#179](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/179)
+* Only require default, allowed and master templates and their associated files to exist (avoids schema mismatches on template changes) [156](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/156)
+
+#### [14.2.1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.1) (November 29th 2024)
+
+* Update documentation links in management dashboard to include major version in the URL
+* Add `ValidateDependenciesOnImport` setting to management dashboard
+* Fix tree restore for custom entities [#241](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/241)
+* Disable import button when no file is selected
+
+#### [14.2.0](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.0) (November 21st 2024)
+
+* All items from 14.2.0-rc1
+
+#### [14.2.0-rc1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.0) (November 13th 2024)
+
+* Add option to include all schema in a workspace export
+* Add option to export from transfer queue
+* Combine migrated grid editor with default Block Grid block configuration (set `RowMinSpan` and `RowMaxSpan` to `1` and `EditorSize` to `medium`)
+* Import on startup
+* Added `ValidateDependenciesOnImport` setting to disable dependency validation on import
+* Fixed issue where content was not saved when transferring variant content with a release date
+* Support flexible environments on Umbraco Cloud (remove requirement for environment types to be Development, Staging or Live)
+
 #### [14.1.4](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.1.4) (October 3rd 2024)
 
 * Support migrating legacy Grid editor settings (config/styles) using JSON object pre-values
@@ -106,4 +132,4 @@ This section contains the release notes for Umbraco Deploy 14 including all chan
 
 ## Legacy release notes
 
-You can find the release notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)
+You can find the release notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)

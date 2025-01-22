@@ -1,9 +1,9 @@
 ---
-icon: square-exclamation
 description: >-
   Sometimes you need more fine-grained personalization for your website. For
   this purpose the Umbraco Engage exposes a service called the
   IAnalyticsStateProvider.
+icon: square-exclamation
 ---
 
 # Retrieve segment information from code
@@ -55,9 +55,9 @@ We can for example check if the current visitor falls into a segment called "**M
 
 The personalization used by the Umbraco Engage to modify the appearance of a page is called **Applied Personalization**.
 
-A page request can have only **one** active Applied Personalization. Based on the current segments (and their sort order), Umbraco Engage picks the first applicable Applied Personalization. This could be a multi-doctype or multi-page personalization (Marketing section) or single-page personalization (content).
+A page request can have only **one** active Applied Personalization. Based on the current segments (and their sort order), Umbraco Engage picks the first applicable Applied Personalization. This could be a multi-doctype or multi-page personalization (Engage section) or single-page personalization (content).
 
-To inspect the resolved Applied Personalization, we can use the property **AppliedPersonalization** on the state's **PageView**:
+To inspect the resolved Applied Personalization, we can use the property `AppliedPersonalization` on the state's **PageView**:
 
 {% code overflow="wrap" %}
 ```csharp

@@ -1,14 +1,14 @@
 ---
-icon: square-exclamation
 description: >-
   Umbraco Engage provides the ability to continuously monitor the A/B tests you
   are running on your website. It is recommended to disable tests that perform
   poorly.
+icon: square-exclamation
 ---
 
 # Monitor the A/B Test
 
-When the A/B test is running it is advised to check the progress regularly. This can be done on the specific page or via the Marketing Section.
+When the A/B test is running it is advised to check the progress regularly. This can be done on the specific page or via the Engage Section.
 
 If you go to the overview you can see all running tests. The overview includes the following information:
 

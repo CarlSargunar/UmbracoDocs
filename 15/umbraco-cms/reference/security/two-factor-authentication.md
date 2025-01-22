@@ -386,7 +386,7 @@ The 2FA experience can be customized in Umbraco. This can be done by creating a 
 
 The following examples show how to customize the 2FA activation screen and the 2FA login screen.
 
-The examples are using the [Lit](https://lit.dev/) library to create custom elements. This is the recommended way of creating custom elements in Umbraco. Lit is a light-weight library that augments the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/API/Web\_components/Using\_custom\_elements) to provide a declarative, performant, and interoperable way to create web components.
+The examples are using the [Lit](https://lit.dev/) library to create custom elements. This is the recommended way of creating custom elements in Umbraco. Lit is a light-weight library that augments the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements) to provide a declarative, performant, and interoperable way to create web components.
 
 The examples are using the `@umbraco-cms/backoffice` package to get access to the Umbraco backoffice components and services. This package is included in Umbraco and can be used to create custom elements that look and feel like the rest of the Umbraco backoffice.
 
@@ -642,7 +642,7 @@ You should only customize the 2FA login screen in certain cases, for example:
 
 * If you have a provider that requires a non-numeric field or additional info.
 * If you have a provider that requires the user to scan a QR code, you should additionally show the QR code.
-* If you need to authenticate the user in a different way than the default [AuthenticationController](https://apidocs.umbraco.com/v14/csharp/api/Umbraco.Cms.Web.BackOffice.Controllers.AuthenticationController.html#Umbraco\_Cms\_Web\_BackOffice\_Controllers\_AuthenticationController\_PostVerify2FACode\_Verify2FACodeModel\_) in Umbraco.
+* If you need to authenticate the user in a different way than the default option.
 
 You need to create a JavaScript module that exports a default custom element to be used in the login screen. This module should be placed in the `App_Plugins` folder. The module should be registered using a composer.
 
@@ -650,7 +650,7 @@ You can use the following code as a starting point. This will give you a view lo
 
 ![Custom 2FA login](images/2fa-login-custom-view.png)
 
-The following code is an example of a custom 2FA login screen using [Lit](https://lit.dev/). This is the recommended way of creating a custom 2FA login screen. Lit is a light-weight library that augments the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/API/Web\_components/Using\_custom\_elements) to provide a declarative, performant, and interoperable way to create web components.
+The following code is an example of a custom 2FA login screen using [Lit](https://lit.dev/). This is the recommended way of creating a custom 2FA login screen. Lit is a light-weight library that augments the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements) to provide a declarative, performant, and interoperable way to create web components.
 
 The element registers two properties: providers and returnPath. These properties are used to render the view. The providers property is an array of strings, where each string is the name of a 2FA provider. The returnPath is the path to redirect to after a successful login. Both supplied by the login screen automatically.
 

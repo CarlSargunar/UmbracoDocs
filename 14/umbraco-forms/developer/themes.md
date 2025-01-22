@@ -23,8 +23,8 @@ You can obtain the latest versions of the default theme for each Forms major ver
 * [Forms 10 Default Theme](https://umbra.co/umbraco-forms-default-theme) (for 10.5.5 and above)
 * [Forms 11 Default Theme](https://umbra.co/umbraco-forms-default-theme-11) (for 11.1.0 and above)
 * [Forms 12 Default Theme](https://umbra.co/umbraco-forms-default-theme-12) (for 12.2.4 and above)
-* [Forms 13 Default Theme](https://umbra.co/umbraco-forms-default-theme-13) (for 13.2.2 and above)
-* [Forms 14 Default Theme](https://umbra.co/umbraco-forms-default-theme-14) (for 14.1.4 and above)
+* [Forms 13 Default Theme](https://umbra.co/umbraco-forms-default-theme-13) (for 13.3.0 and above)
+* [Forms 14 Default Theme](https://umbra.co/umbraco-forms-default-theme-14) (for 14.2.0 and above)
 
 If you are using a lower minor version of Forms than those listed, you should download an older version of the default theme.
 
@@ -110,6 +110,21 @@ public class MyComposer : IComposer
     {
       builder.EmailTemplates()
           .Add<MyCustomEmailTemplate>();
+    }
+}
+```
+
+##### Removing the Default Email Template
+
+If providing custom email templates, you may want to remove the one provided with Forms. You can do that via the same `EmailTemplates` collection.
+
+```csharp
+public class MyComposer : IComposer
+{
+    public void Compose(IUmbracoBuilder builder)
+    {
+      builder.EmailTemplates()
+          .Exclude<DefaultEmailTemplate>();
     }
 }
 ```

@@ -5,7 +5,7 @@ description: >-
 
 # Version Specific Upgrade Notes
 
-This page covers specific upgrade documentation for when migrating to major 14 of Umbraco Commerce.
+This page covers specific upgrade documentation for when migrating to major 15 of Umbraco Commerce.
 
 {% hint style="info" %}
 If you are upgrading to a new minor or patch version, you can find information about the breaking changes in the [Release Notes](../release-notes.md) article.
@@ -13,9 +13,9 @@ If you are upgrading to a new minor or patch version, you can find information a
 
 ## Version Specific Upgrade Notes History
 
-#### 14.0.0 
+#### 15.0.0 
 
-* UI Config file configurations will need to use the new UI Extensions API
+* API method calls will need to use the async alternatives
 
 #### Umbraco Commerce Launch
 
@@ -25,4 +25,4 @@ See the [Migrate from Vendr to Umbraco Commerce guide](migrate-from-vendr-to-umb
 
 ## Legacy version specific upgrade notes
 
-You can find the version specific upgrade notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/tree/umbraco-eol-versions).&#x20;
+You can find the version specific upgrade notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/tree/umbraco-eol-versions).&#x20;

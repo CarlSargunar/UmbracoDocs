@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Umbraco Commerce 14  Documentation](README.md)
+* [Umbraco Commerce Documentation](README.md)
 * [Release Notes](release-notes/README.md)
   * [v14.0.0](release-notes/v14.0.0.md)
   * [v14.0.0-Alpha](release-notes/v14.0.0-alpha.md)
@@ -33,6 +33,9 @@
 * [Configure SQLite support](how-to-guides/configure-sqlite-support.md)
 * [Limit Order Line Quantity](how-to-guides/limit-orderline-quantity.md)
 * [Use an Alternative Database for Umbraco Commerce Tables](how-to-guides/use-an-alternative-database-for-umbraco-commerce-tables.md)
+* [Add item to Cart](how-to-guides/add-item.md)
+* [Update Cart](how-to-guides/update-cart.md)
+* [Delete item from Cart](how-to-guides/delete-item.md)
 
 ## Key Concepts
 
@@ -85,8 +88,8 @@
   * [Dynamic Rate Shipping](reference/shipping/dynamic-rate-shipping.md)
   * [Realtime Rate Shipping](reference/shipping/realtime-rate-shipping.md)
 * [Taxes](reference/taxes/README.md)
-    * [Fixed Tax Rates](reference/taxes/fixed-tax-rates.md)
-    * [Calculated Tax Rates](reference/taxes/calculated-tax-rates.md)
+  * [Fixed Tax Rates](reference/taxes/fixed-tax-rates.md)
+  * [Calculated Tax Rates](reference/taxes/calculated-tax-rates.md)
 * [Storefront API](reference/storefront-api/README.md)
   * [Endpoints](reference/storefront-api/endpoints/README.md)
     * [Order](reference/storefront-api/endpoints/order.md)
@@ -101,6 +104,7 @@
     * [Content](reference/storefront-api/endpoints/content.md)
 * [Management API](reference/management-api/README.md)
 * [Go behind the scenes](reference/go-behind-the-scenes.md)
+* [Telemetry](reference/telemetry.md)
 
 ## Tutorials
 

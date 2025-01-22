@@ -17,6 +17,24 @@ If you are upgrading to a new major version, check the breaking changes in the [
 
 This section contains the release notes for Umbraco Commerce 14 including all changes for this version.
 
+#### 14.3.0 (January 13th 2025)
+
+* Added Funnel group match type to Discount rule builder and made All / Any implementations more logical.
+* Updated Umbraco.Licenses dependency with latest changes.
+
+#### 14.2.1 (January 8th 2025)
+
+* Fixed issue with inconsistent payment validation incorrectly identifying some payments as inconsistent.
+* Fixed error in migration script.
+
+#### 14.2.0 (November 12th 2024)
+* Added telemetry support as detailed [here](/14/umbraco-commerce/reference/telemetry/README.md).
+* Added a cart-to-order feature that will facilitate admin users to finalize an order directly from the BackOffice cart workspace.
+
+#### [14.1.8](https://github.com/umbraco/Umbraco.Commerce.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.1.8) (November 11th 2024)
+
+* Fixed Rounding issue between Umbraco Commerce and Stripe payment gateway [#580](https://github.com/umbraco/Umbraco.Commerce.Issues/issues/580).
+
 #### [14.1.7](https://github.com/umbraco/Umbraco.Commerce.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.1.7) (November 1st 2024)
 
 **Important** If you are running on version 14 of Umbraco Commerce it is advised to upgrade to this version as soon as possible. Changes in .NET 8.0.8 cause an error in our `EntityCache` which have been resolved in this release. With some hosting providers automatically applying .NET patch releases, upgrading should be proritised to avoid any unintentional breakages.
@@ -148,4 +166,4 @@ Read the [v14.0.0-Alpha release post](./v14.0.0-alpha.md) for further background
 
 ## Legacy release notes
 
-You can find the release notes for **Vendr** in the [Change log file on Github](changelog-archive/Vendr-core.md).
+You can find the release notes for **Vendr** in the [Change log file on GitHub](changelog-archive/Vendr-core.md).

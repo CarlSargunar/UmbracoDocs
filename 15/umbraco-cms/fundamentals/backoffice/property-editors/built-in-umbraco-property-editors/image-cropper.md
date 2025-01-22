@@ -1,5 +1,9 @@
 # Image Cropper
 
+`Schema Alias: Umbraco.ImageCropper`
+
+`UI Alias: Umb.PropertyEditorUi.ImageCropper`
+
 `Returns: MediaWithCrops`
 
 Returns a path to an image, along with information about focal point and available crops.
@@ -112,7 +116,7 @@ Set the `htmlEncode` to false so that the URL is not HTML encoded
 
 ## Add values programmatically
 
-To update a content property value you need the [Content Service](https://apidocs.umbraco.com/v14/csharp/api/Umbraco.Cms.Core.Services.ContentService.html).
+To update a content property value you need the [Content Service](https://apidocs.umbraco.com/v15/csharp/api/Umbraco.Cms.Core.Services.ContentService.html).
 
 The following sample demonstrates how to add or change the value of an Image Cropper property programmatically. The sample creates an API controller with an action, which must be invoked via a POST request to the URL written above the action.
 

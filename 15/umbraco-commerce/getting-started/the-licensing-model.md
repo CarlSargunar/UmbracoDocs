@@ -57,15 +57,25 @@ Once you have received your license code it needs to be installed on your site.
 
 1. Open the root directory for your project files.
 2. Locate and open the `appSettings.json` file.
-3. Add your Umbraco Commerce license key to `Umbraco:Licenses:Umbraco.Commerce`:
+3. Add your Umbraco Commerce license key to `Umbraco:Licenses:Products:Umbraco.Commerce`:
 
 ```json
 "Umbraco": {
   "Licenses": {
-    "Umbraco.Commerce": "YOUR_LICENSE_KEY"
+    "Products": {
+      "Umbraco.Commerce": "YOUR_LICENSE_KEY"
+    }
   }
 }
 ```
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_Commerce": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
 
 ### Verify the license installation
 

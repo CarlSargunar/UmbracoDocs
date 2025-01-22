@@ -24,9 +24,9 @@ Here we will cover how to install and set up Umbraco Deploy on a new website.
 
 **Set up the Git repository and Umbraco project**
 
-The first step to get Umbraco Deploy up and running is to set up a GitHub repository. This will be where source code is stored, and, following the GitHub actions example, act as our environment where we will set up a CI/CD pipeline.
+The first step to get Umbraco Deploy up and running is to set up a GitHub repository. This will store the source code and serve as our environment for setting up a CI/CD pipeline, following the GitHub Actions example.
 
-1. Using the Visual Studio template, set up a Github repository with a .gitignore file.
+1. Using the Visual Studio template, set up a GitHub repository with a .gitignore file.
 2. Clone down the repository to your local machine.
 3. Create a new Umbraco project.
 4. Run the project.
@@ -291,6 +291,14 @@ For example, in `appsettings.json`:
        ...
     }
 ```
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_Deploy_OnPrem": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
 
 Umbraco Cloud projects use a license file placed in the `/umbraco/Licenses` folder that is provided when your project is created.
 

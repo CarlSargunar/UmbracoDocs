@@ -16,7 +16,7 @@ Here you can see whether the latest deployment has been completed or failed. You
 
 ## Deploy Operations
 
-With the Deploy operations, you can run different operations in Umbraco Deploy.&#x20;
+With the Deploy operations, you can run different operations in Umbraco Deploy.
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>The different Deploy operations.</p></figcaption></figure>
 

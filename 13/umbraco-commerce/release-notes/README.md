@@ -17,6 +17,22 @@ If you are upgrading to a new major version, check the breaking changes in the [
 
 This section contains the release notes for Umbraco Commerce 13 including all changes for this version.
 
+#### 13.1.16 (January 13th 2025)
+
+* Updated Umbraco.Licenses dependency with latest changes.
+
+#### 13.1.15 (January 8th 2025)
+
+* Fixed issue with inconsistent payment validation incorrectly identifying some payments as inconsistent.
+
+#### 13.1.14 (December 12th 2024)
+
+* Added support for test licenses.
+
+#### [13.1.13](https://github.com/umbraco/Umbraco.Commerce.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.1.13) (November 11th 2024)
+
+* Fixed Rounding issue between Umbraco Commerce and Stripe payment gateway [#580](https://github.com/umbraco/Umbraco.Commerce.Issues/issues/580).
+
 #### [13.1.12](https://github.com/umbraco/Umbraco.Commerce.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.1.12) (November 1st 2024)
 
 **Important** If you are running on version 13 of Umbraco Commerce it is advised to upgrade to this version as soon as possible. Changes in .NET 8.0.8 cause an error in our `EntityCache` which have been resolved in this release. With some hosting providers automatically applying .NET patch releases, upgrading should be proritised to avoid any unintentional breakages.
@@ -150,4 +166,4 @@ Read the [v13.1.0-RC release post](./v13.1.0-rc.md) for further background on th
 
 ## Legacy release notes
 
-You can find the release notes for **Vendr** in the [Change log file on Github](changelog-archive/Vendr-core.md).
+You can find the release notes for **Vendr** in the [Change log file on GitHub](changelog-archive/Vendr-core.md).

@@ -1,6 +1,8 @@
 # File Upload
 
-`Alias: Umbraco.UploadField`
+`Schema Alias: Umbraco.UploadField`
+
+`UI Alias: Umb.PropertyEditorUi.UploadField`
 
 `Returns: string`
 
@@ -60,7 +62,7 @@ The samples in this section have not been verified against the latest version of
 Instead, we recommend using the [Media Picker](media-picker-3.md) for uploading files to your Umbraco website.
 {% endhint %}
 
-See the example below to see how a value can be added or changed programmatically. To update a value of this property editor you need the [Content Service](https://apidocs.umbraco.com/v14/csharp/api/Umbraco.Cms.Core.Services.ContentService.html) and the [Media Service](https://apidocs.umbraco.com/v14/csharp/api/Umbraco.Cms.Core.Services.MediaService.html).
+See the example below to see how a value can be added or changed programmatically. To update a value of this property editor you need the [Content Service](https://apidocs.umbraco.com/v15/csharp/api/Umbraco.Cms.Core.Services.ContentService.html) and the [Media Service](https://apidocs.umbraco.com/v15/csharp/api/Umbraco.Cms.Core.Services.MediaService.html).
 
 {% hint style="info" %}
 The example below demonstrates how to add values programmatically using a Razor view. However, this is used for illustrative purposes only and is not the recommended method for production environments.
@@ -129,6 +131,8 @@ Although the use of a GUID is preferable, you can also use the numeric ID to get
 ```
 
 If Modelsbuilder is enabled you can get the alias of the desired property without using a magic string:
+
+{% include "../../../../.gitbook/includes/obsolete-warning-ipublishedsnapshotaccessor.md" %}
 
 ```csharp
 @inject IPublishedSnapshotAccessor _publishedSnapshotAccessor;

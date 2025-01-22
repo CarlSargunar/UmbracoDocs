@@ -1,10 +1,15 @@
 # Media Picker
 
-`Alias: Umbraco.MediaPicker3`
+`Schema Alias: Umbraco.MediaPicker3`
+
+`UI Alias: Umb.PropertyEditorUi.MediaPicker`
 
 `Returns: IEnumerable<MediaWithCrops>` or `MediaWithCrops`
 
-This property editors returns a single `MediaWithCrops` item if the "Pick multiple items" Data Type setting is disabled or a collection if it is enabled.
+This property editors returns one of the following:
+
+- A collection (`IEnumerable<MediaWithCrops>`) if the **Pick multiple items** setting is enabled.
+- A single `MediaWithCrops` item if the **Pick multiple items** setting is disabled.
 
 ## Data Type Definition Example
 
@@ -36,7 +41,7 @@ This setting is used to limit the Media Picker to certain parts of the Media Tre
 
 Use this setting to overrule user permissions, to enable any user of this property to pick any Media Item of the chosen Start node.
 
-When this setting is enabled, a user who doesn't normally have access to the media selected as "Start Node" (/Design in this case), can access the media when using this particular Media Picker. If no Start node has been defined for this property any content can be viewed and selected of this property.
+When this setting is enabled, a user can access the media available under the selected "Start Node" (/Design in this case). This applies even if they normally lack access. The access is granted specifically when using this particular Media Picker.
 
 ### Enable Focal Point
 
@@ -70,6 +75,23 @@ Global crops are configured on the Image Cropper property of the Image Media Typ
     }
 }
 ```
+
+#### Multiple enabled without Modelsbuilder to retrieve IEnumerable<IPublishedContent> data
+
+```csharp
+@using Umbraco.Cms.Core.Models
+@{
+    var listOfImages = Model.Value<IEnumerable<IPublishedContent>>("medias");
+    foreach (var image in listOfImages)
+    {
+        <img src="@image.Url()" alt="@image.Name" />
+    }
+}
+```
+
+{% hint style="info" %}
+While `MediaWithCrops` is the default return type, `IPublishedContent` may be used in backward-compatible implementations or when working directly with core APIs.
+{% endhint %}
 
 ### Multiple enabled with Modelsbuilder
 

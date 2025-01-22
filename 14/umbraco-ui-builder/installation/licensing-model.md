@@ -61,11 +61,22 @@ Once you have received your license code it needs to be installed on your site.
 
 ```json
 "Umbraco": {
-  "Licenses": {
-    "Umbraco.UIBuilder": "YOUR_LICENSE_KEY"
+    "Licenses": {
+        "Products": {
+            "Umbraco.UIBuilder": "YOUR_LICENSE_KEY"
+         }
   }
 }
 ```
+
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_UIBuilder": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
 
 ### Verify the license installation
 

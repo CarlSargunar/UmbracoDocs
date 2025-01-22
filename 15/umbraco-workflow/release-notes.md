@@ -16,10 +16,31 @@ Check the [Version Specific Upgrade Notes](upgrading/version-specific.md) articl
 
 This section contains the release notes for Umbraco Workflow 15 including all changes for this version.
 
-### 15.0.0-rc1 (October 9th, 2024)
+### [15.0.2](https://github.com/umbraco/Umbraco.Workflow.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.2) (January 16 2025 )
+* Fixes workflow task summary generation in email body [#91](https://github.com/umbraco/Umbraco.Workflow.Issues/issues/91)
+* Fixes localization in email body
+* Updates Umbraco.Licenses dependency
+* Refactors migration plan naming to align with the broader DXP product suite.
 
+### 15.0.1 (December 16th 2024)
+* Fixes column type mismatch in migration
+* Correctly implements delay time in History Cleanup hosted service
+
+### 15.0.0 (November 14th, 2024)
 * Compatibility with Umbraco 15
+* Replaces entity action wrappers with `umbExtensionRegistry.appendCondition()`
+* Adds abstraction over `UmbContentWorkspaceContext.readOnlyState` to consistently implement readonly document workspaces.
+* Fixes invariant culture handling when unlocking a scheduled document.
+
+### 15.0.0-rc3 (November 8th, 2024)
+* Compatibility with Umbraco 15-rc3
+
+### 15.0.0-rc2 (October 23rd, 2024)
+* Compatibility with Umbraco 15-rc2
+
+### 15.0.0-rc1 (October 9th, 2024)
+* Compatibility with Umbraco 15-rc1
 
 ## Legacy release notes
 
-You can find the release notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-workflow/release-notes.md)
+You can find the release notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-workflow/release-notes.md)

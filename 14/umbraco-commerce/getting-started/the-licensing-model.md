@@ -57,15 +57,25 @@ Once you have received your license code it needs to be installed on your site.
 
 1. Open the root directory for your project files.
 2. Locate and open the `appSettings.json` file.
-3. Add your Umbraco Commerce license key to `Umbraco:Licenses:Umbraco.Commerce`:
+3. Add your Umbraco Commerce license key to `Umbraco:Licenses:Products:Umbraco.Commerce`:
 
 ```json
 "Umbraco": {
-  "Licenses": {
-    "Umbraco.Commerce": "YOUR_LICENSE_KEY"
+    "Licenses": {
+        "Products": {
+            "Umbraco.Commerce": "YOUR_LICENSE_KEY"
   }
+ }
 }
 ```
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_Commerce": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
 
 ### Verify the license installation
 
@@ -78,7 +88,6 @@ You can verify that your license is successfully installed by logging into your 
 If you are running on a single domain for both your frontend and backend environments, it's not necessary to configure a `UmbracoApplicationUrl`.
 
 If you have different domains for your frontend and backend, then it's advised that you configure an `UmbracoApplicationUrl` set to your backoffice URL. This helps the licensing engine know which URL should be used for validation checks. Without this configuration setting, the licensing engine will try and work out the domain to validate from the HTTP request object. This can lead to errors when switching between domains.
-
 
 An `UmbracoApplicationUrl` can be configured in your `appSettings.json` file like so:
 
@@ -101,8 +110,9 @@ See the [Fixed Application URL](https://docs.umbraco.com/umbraco-cms/extending/h
 If you are hosting on Umbraco Cloud you will find the configuration described above won't be reflected in your environment. The reason for this is that Umbraco Cloud sets this value as an environment variable set to the Cloud project domain (`<your project>.umbraco.io`). This overrides what is set via the `appSettings.json` file.
 
 There are two options in this case:
-- Either the domains for each of your Cloud environments can be added to your license.
-- Or, for more control and to ensure this value is set correctly for other reasons, you can apply the configuration via code.
+
+* Either the domains for each of your Cloud environments can be added to your license.
+* Or, for more control and to ensure this value is set correctly for other reasons, you can apply the configuration via code.
 
 For example, in your `Program.cs`:
 

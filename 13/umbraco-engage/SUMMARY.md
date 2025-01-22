@@ -1,16 +1,20 @@
 # Table of contents
 
 * [Umbraco Engage Documentation](README.md)
+* [Release Notes](release-notes.md)
+* [Support](support.md)
 
 ## Installation
 
 * [System Requirements](getting-started/for-developers/system-requirements.md)
 * [Installation](installation/installation.md)
 * [Licensing](installation/licensing.md)
-* [Troubleshooting Installs](installation/troubleshooting-installs.md)
+* [Verify your Engage installation](installation/troubleshooting-installs.md)
 
 ## Upgrading
 
+* [Upgrade Umbraco Engage](upgrading/upgrade-umbraco-engage.md)
+* [Version specific Upgrade Notes](upgrading/version-specific-upgrade-notes.md)
 * [Migrate from uMarketingSuite](upgrading/migrate-from-umarketingsuite.md)
 
 ## Getting Started
@@ -24,6 +28,7 @@
   * [Load Balancing and CM/CD Environments](getting-started/for-developers/loadbalancing-and-cm-cd-environments.md)
   * [Content Delivery Network recommendations](getting-started/for-developers/content-delivery-network-recommendations.md)
   * [Cockpit](getting-started/for-developers/cockpit.md)
+  * [Troubleshooting installations](getting-started/for-developers/troubleshooting-installations.md)
 
 ## Marketers and Editors
 
@@ -43,6 +48,7 @@
   * [Videos](marketers-and-editors/analytics/videos.md)
   * [Scroll Heatmap](marketers-and-editors/analytics/scroll-heatmap.md)
   * [Google Analytics vs Umbraco Engage](marketers-and-editors/analytics/google-analytics-vs-umbraco-engage.md)
+  * [Search Terms](marketers-and-editors/analytics/search-terms.md)
 * [A/B Testing](marketers-and-editors/ab-testing/README.md)
   * [What is A/B testing](marketers-and-editors/ab-testing/what-is-ab-testing.md)
   * [Types of A/B Tests](marketers-and-editors/ab-testing/types-of-ab-tests/README.md)
@@ -119,7 +125,6 @@
 * [Headless](developers/headless/README.md)
   * [Using the Marketing API](developers/headless/using-the-marketing-api.md)
   * [Headless Example](developers/headless/headless-example.md)
-* [Support](developers/support.md)
 
 ## Security and Privacy
 

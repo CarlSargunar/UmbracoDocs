@@ -10,7 +10,7 @@ Umbraco Engage is a commercial product. You can run Umbraco Engage unrestricted 
 
 ## How does it work?
 
-Licenses are sold per backoffice domain and will also work on all subdomains. If you have alternative staging/QA environment domains, additional domains can be added to the license on request.
+Licenses are sold per backoffice domain. If you have alternative staging/QA environment domains or require one or more subdomains, additional domains can be added to the license on request.
 
 {% hint style="info" %}
 The licenses are not bound to a specific product version. They will work for all versions of the related product.
@@ -44,7 +44,7 @@ There are a few differences as to what the licenses cover:
 * Each individual subdomain has to be specified as part of the license (e.g. `subdomain.mysite.com`), wildcard subdomains are not allowed.
 
 {% hint style="info" %}
-If you have multiple backoffice domains pointing at the same installation, you have the option to purchase and [add **additional domains**](the-licensing-model.md#add-additional-domains) to your license.
+If multiple backoffice domains share the same installation, you have to purchase and add [**additional domains**](the-licensing-model.md#add-additional-domains) to your license.
 
 This is an add-on domain for existing licenses. Refunds will not be given for this product.
 {% endhint %}
@@ -72,6 +72,15 @@ Once you have received your license code it needs to be installed on your site.
   }
 }
 ```
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_Engage": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
+
 
 ### Verify the license installation
 

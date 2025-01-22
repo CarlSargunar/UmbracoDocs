@@ -10,7 +10,7 @@ Each section of the Umbraco backoffice has its own set of default dashboards. Yo
 
 The dashboard area of Umbraco is used to display an "editor" for the selected item in the tree. If no item is selected, then the default set of section dashboards is shown in the dashboard area.
 
-Notice that [Section Views](section-view.md) is another similar approach to append information to the root of a Section. Section views are thought mainly to be used as Secondary pages. These two approaches should ideally not be combined.
+Notice that [Section Views](sections/section-view.md) is another similar approach to append information to the root of a Section. Section views are thought mainly to be used as Secondary pages. These two approaches should ideally not be combined.
 
 ## Default Dashboards in Umbraco
 
@@ -37,7 +37,7 @@ Here is a table of the default dashboards in Umbraco and the sections they are u
 
 Even though these dashboards are useful, you might want to create your own custom dashboard to display specific information or functionality.
 
-You can try and [create a custom dashboard](../../../../tutorials/creating-a-custom-dashboard/) as a way on getting started on this topic.
+You can try and [create a custom dashboard](../../../tutorials/creating-a-custom-dashboard/) as a way on getting started on this topic.
 
 ## Registering your Dashboard
 
@@ -85,7 +85,7 @@ You can specify conditions for when the dashboard should be displayed. This is d
 This will make the dashboard only be displayed on the Content section.
 
 {% hint style="info" %}
-You can read more about [Extension Conditions](../../../customizing/extending-overview/extension-types/condition.md) in the documentation.
+You can read more about [Extension Conditions](condition.md) in the documentation.
 {% endhint %}
 
 ### Properties
@@ -107,7 +107,13 @@ The dashboard manifest can contain the following properties:
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                               |
 | Label       | string | The label shown to the user                                                                                                                                                                                                                                                                               |
 | pathname    | string | The routable URL pathname                                                                                                                                                                                                                                                                                 |
-| conditions  | array  | (Optional) [Conditions](../../../customizing/extending-overview/extension-types/condition.md) for when the dashboard should be displayed                                                                                                                                                                  |
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                               |
+| Label       | string | The label shown to the user                                                                                                                                                                                                                                                                               |
+| pathname    | string | The routable URL pathname                                                                                                                                                                                                                                                                                 |
+| Property    | Type   | Description                                                                                                                                                                                                                                                                                               |
+| Label       | string | The label shown to the user                                                                                                                                                                                                                                                                               |
+| pathname    | string | The routable URL pathname                                                                                                                                                                                                                                                                                 |
+| conditions  | array  | (Optional) [Conditions](condition.md) for when the dashboard should be displayed                                                                                                                                                                                                                          |
 
 ### Full Example
 

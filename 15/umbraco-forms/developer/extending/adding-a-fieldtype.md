@@ -162,7 +162,7 @@ All setting properties for the Forms provider types are marked as `virtual`, so 
 
 ## Umbraco Backoffice Components
 
-With Forms 14, aspects of the presentation and functionality of the custom field are handled by client-side components, registered via manifests:
+With Forms 14+, aspects of the presentation and functionality of the custom field are handled by client-side components, registered via manifests:
 
 * The preview, displayed on the form definition editor.
 * The property editor UI used for editing the the submitted values via the backoffice.
@@ -172,7 +172,7 @@ With Forms 14, aspects of the presentation and functionality of the custom field
 
 To create custom backoffice components for Umbraco 14, it's recommended to use a front-end build setup using Vite, TypeScript, and Lit. For more information, see the [Extension with Vite, TypeScript, and Lit](https://app.gitbook.com/s/G1Byxw7XfiZAj8zDMCTD/tutorials/creating-your-first-extension#extension-with-vite-typescript-and-lit) article.
 
-To display a name and description on a custom field, you need to register a JavaScript file as shown in the [Localization](https://docs.umbraco.com/umbraco-cms/customize-the-backoffice/extending-overview/extension-types/localization) article.
+To display a name and description on a custom field, you need to register a JavaScript file as shown in the [Localization](https://app.gitbook.com/s/7MBVdnTbFiAgWuRsHpNS/customizing/extending-overview/extension-types/localization) article.
 
 ### Field Preview
 
@@ -438,7 +438,9 @@ export const manifests = [sliderValueConverterManifest];
 
 ### Language Files
 
-Setting labels and descriptions are translated via language files. The following example shows how this is created for the settings on our example field type:
+Setting labels and descriptions can be translated via language files. If no client-side localization is provided, the values provided server-side in the `Setting` attribute's `Name` and `Description` properties will be used.
+
+The following example shows how this is created for the settings on our example field type:
 
 ```javascript
 import type { UmbLocalizationDictionary } from "@umbraco-cms/backoffice/localization-api";
@@ -473,7 +475,7 @@ Each different type of extension for Forms uses a different root value:
 The language files are registered with:
 
 ```javascript
-import type { ManifestLocalization } from "@umbraco-cms/backoffice/extension-registry";
+import type { ManifestLocalization } from '@umbraco-cms/backoffice/localization';
 
 const localizationManifests: Array<ManifestLocalization> = [
   {

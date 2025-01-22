@@ -25,7 +25,7 @@ You want to transfer the whole site. You start from the `Home` node and choose t
 4. Choose if you want to include all pages under the chosen page or only transfer the chosen node.
    * If you wish to transfer all your content at once, click **...** next to the Content tree where you will also find **Queue for transfer** - this will queue all your content for transfer.
 5. Select the language versions that you want to queue for transfer. Only languages for which you have permission to access will be selectable.
-6. Set the publish date and time if you want to change when the transferred content should be published.
+6.  Set the publish date and time if you want to change when the transferred content should be published.
 
     {% hint style="info" %}
     By default, the content will be transferred in its current published state. So if the content is published in the current environment, the changes will be deployed and the item immediately be published in the destination. If you prefer to schedule the publishing of the changes, you can do so by selecting a publish date.
@@ -68,6 +68,6 @@ This does not include entries submitted via the forms.
 
 Sometimes a content transfer might not be possible. For example if you add a new property to the HomePage Document type and you don’t have that property in both environments, you’ll get an error with a hint on how to fix this.
 
-![clone dialog](<../../../10/umbraco-deploy/deployment-workflow/images/schema-mismatch (1).png>)
+![Schema mismatch](../deployment-workflow/images/schema-mismatch.png)
 
 If you are seeing this type of issue when trying to transfer content, head over to our article about [Schema Mismatch errors](../troubleshooting.md), where you can read about how to resolve the issues.

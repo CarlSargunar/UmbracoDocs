@@ -60,12 +60,22 @@ For example, in `appsettings.json`:
       ...
     },
     "Licenses": {
-      "Umbraco.Deploy.OnPrem": "<your license key>"
+      "Products": {
+        "Umbraco.Deploy.OnPrem": "<your license key>"
+      }
     },
     "Deploy": {
        ...
     }
 ```
+
+{% hint style="info" %}
+You might run into issues when using a period in the product name when using environment variables. Use an underscore in the product name instead, to avoid problems.
+
+```json
+"Umbraco_Deploy_OnPrem": "YOUR_LICENSE_KEY"
+```
+{% endhint %}
 
 Umbraco Cloud projects use a license file placed in the `/umbraco/Licenses` folder that is provided automatically when your project is created.
 
@@ -120,7 +130,9 @@ Then configure a random string as an authorization key in configuration. This is
 ```json
   "Umbraco": {
     "Licenses": {
-      "Umbraco.Deploy.OnPrem": "<your license key>"
+      "Products": {
+        "Umbraco.Deploy.OnPrem": "<your license key>"
+      }
     },
     "LicensesOptions": {
       "EnableScheduledValidation": false,

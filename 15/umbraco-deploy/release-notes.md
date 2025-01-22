@@ -18,13 +18,43 @@ If you are upgrading to a new major version you can find the details about the b
 
 This section contains the release notes for Umbraco Deploy 15 including all changes for this version.
 
+#### [15.0.2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.2) (December 23rd 2024)
+
+* Ensure environment-to-environment actions are executed asynchronously on background job (fixes timeout issues on large deployments) [#179](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/179)
+* Only require default, allowed and master templates and their associated files to exist (avoids schema mismatches on template changes) [156](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/156)
+
+#### [15.0.1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.1) (November 29th 2024)
+
+* Update documentation links in management dashboard to include major version in the URL
+* Add `ValidateDependenciesOnImport` setting to management dashboard
+* Fix tree restore for custom entities [#241](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/241)
+* Fix import complete heading and description (was using export complete localization keys)
+* Disable import button when no file is selected
+
+#### [15.0.0](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.0) (November 14th 2024)
+
+* Update CMS dependency to 15.0.0
+
+#### [15.0.0-rc4](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.0) (November 13th 2024)
+
+* Update CMS dependency to 15.0.0-rc4
+* Preview of features and bug fixes due in 13.3 and 14.2:
+  * Import on startup
+  * Added `ValidateDependenciesOnImport` setting to disable dependency validation on import
+  * Support flexible environments on Umbraco Cloud (remove requirement for environment types to be Development, Staging or Live)
+
+#### [15.0.0-rc3](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.0) (November 7th 2024)
+
+* Update CMS dependency to 15.0.0-rc3
+
 #### [15.0.0-rc2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.0) (October 24th 2024)
 
 * Update CMS dependency to 15.0.0-rc2
-* Add option to include all schema in a workspace export
-* Add option to export from transfer queue
-* Fix `BlockValue` obsoleted properties (set GUID keys instead of UDIs and support block level variants)
-* Combine migrated grid editor with default Block Grid block configuration (set `RowMinSpan` and `RowMaxSpan` to `1` and `EditorSize` to `medium`)
+* Preview of features and bug fixes due in 13.3 and 14.2:
+  * Add option to include all schema in a workspace export
+  * Add option to export from transfer queue
+  * Fix `BlockValue` obsoleted properties (set GUID keys instead of UDIs and support block level variants)
+  * Combine migrated grid editor with default Block Grid block configuration (set `RowMinSpan` and `RowMaxSpan` to `1` and `EditorSize` to `medium`)
 * Restructure keys and add new UI localizations
 
 #### [15.0.0-rc1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F15.0.0) (October 11th 2024)
@@ -37,7 +67,19 @@ This section contains the release notes for Umbraco Deploy 15 including all chan
 
 ## Deploy Contrib
 
-#### [15.0.0-rc2](https://github.com/umbraco/Umbraco.Deploy.Contrib/releases/tag/release-15.0.0-rc1) (October 24th 2024)
+#### [15.0.0](https://github.com/umbraco/Umbraco.Deploy.Contrib/releases/tag/release-15.0.0) (November 14th 2024)
+
+* Update CMS and Deploy dependencies to 15.0.0
+
+#### [15.0.0-rc4](https://github.com/umbraco/Umbraco.Deploy.Contrib/releases/tag/release-15.0.0-rc4) (November 13th 2024)
+
+* Update CMS and Deploy dependencies to 15.0.0-rc4
+
+#### [15.0.0-rc3](https://github.com/umbraco/Umbraco.Deploy.Contrib/releases/tag/release-15.0.0-rc3) (November 7th 2024)
+
+* Update CMS and Deploy dependencies to 15.0.0-rc3
+
+#### [15.0.0-rc2](https://github.com/umbraco/Umbraco.Deploy.Contrib/releases/tag/release-15.0.0-rc2) (October 24th 2024)
 
 * Update CMS and Deploy dependencies to 15.0.0-rc2
 
@@ -50,4 +92,4 @@ This section contains the release notes for Umbraco Deploy 15 including all chan
 
 ## Legacy release notes
 
-You can find the release notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)
+You can find the release notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)

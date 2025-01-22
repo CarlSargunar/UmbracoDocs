@@ -99,9 +99,26 @@ We currently have a size limit set to 134217728 bytes or about ~128 MB.
 
 Make sure that the package you are trying to upload does not contain anything unnecessary.
 
-You can see an example of how you could zip your repository before uploading it, by referring to our [Github](samplecicdpipeline/github-actions.md) or [Azure Devops](samplecicdpipeline/azure-devops.md) samples. 
+You can see an example of how you could zip your repository before uploading it, by referring to our [GitHub](samplecicdpipeline/github-actions.md) or [Azure DevOps](samplecicdpipeline/azure-devops.md) samples. 
 
 ## Deployment failed
+
+### File missing: The .umbraco file cannot be found in the root of the repository
+
+The `.umbraco` file is missing or has been renamed. This file needs to be present in the root of the zipped package.
+
+### File format Error: The .umbraco file is not valid
+
+The `.umbraco` file has invalid characters. Sometimes people need to change the repository's folder structure and the default project's name. 
+Ensure that the base field does not use backslashes ('\') as the folder denominator.
+
+Below is an example of the default `.umbraco` file that comes with a new Umbraco Cloud project.  
+
+```
+[project]
+base = "src/UmbracoProject"
+csproj = "UmbracoProject.csproj"
+```
 
 ### Cannot apply update because the following packages would be downgraded: Package: Umbraco.{abc}, Version: {x.y.z}
 

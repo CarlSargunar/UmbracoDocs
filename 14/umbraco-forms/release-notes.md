@@ -18,6 +18,29 @@ If you are upgrading to a new major version, you can find information about the 
 
 This section contains the release notes for Umbraco Forms 14 including all changes for this version.
 
+#### [**14.2.3**](https://github.com/umbraco/Umbraco.Forms.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.3) **(December 5th 2024)**
+
+* Fixed regression introduced in 14.2.1 that caused issues for custom field types overriding the `ProcessSubmittedValue` method  [#1328](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1328).
+
+#### [**14.2.2**](https://github.com/umbraco/Umbraco.Forms.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.2) **(November 28th 2024)**
+
+* Fixed issue with case sensitive checkbox conditions across multi-page forms [#1325](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1325).
+* Fixed Forms dashboard form title and icon alignment.
+
+#### [**14.2.1**](https://github.com/umbraco/Umbraco.Forms.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.1) **(November 21st 2024)**
+
+* Fixed issues with multi-page forms used in conjunction with a `FormPrePopulateNotification` handler. File uploads and multi-value fields like checkbox lists now function correctly [#1317](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1317) [#1320](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1320).
+* Added a couple of missing translation keys [#1316](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1316) [#1319](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1319).
+* Rendered file upload previews in the backoffice.
+* Fixed issue with saving the "Hide field validation labels" value when editing form settings.
+* Fixed issue with selection of Document Type on the "Save as Umbraco node" workflow type.
+* Used correct labels for conditions when used on fields, fieldsets, pages or workflows [#1323](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1323).
+
+#### [**14.2.0**](https://github.com/umbraco/Umbraco.Forms.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.0) **(November 7th 2024)**
+
+* All items detailed under release candidates for 14.2.0.
+* Fixed issue with validation for invalid file extension on form submissions via the API [#1310](https://github.com/umbraco/Umbraco.Forms.Issues/issues/1310).
+
 #### [**14.2.0-rc2**](https://github.com/umbraco/Umbraco.Forms.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F14.2.0) **November 3rd 2024**
 
 * Updated dependency on Umbraco CMS to 14.3.0.
@@ -178,4 +201,4 @@ Please ensure to check the rendering of these features on website forms after th
 
 ## Legacy release notes
 
-You can find the release notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-forms/release-notes.md) and [Umbraco Forms Package page](https://our.umbraco.com/packages/developer-tools/umbraco-forms/).
+You can find the release notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-forms/release-notes.md) and [Umbraco Forms Package page](https://our.umbraco.com/packages/developer-tools/umbraco-forms/).

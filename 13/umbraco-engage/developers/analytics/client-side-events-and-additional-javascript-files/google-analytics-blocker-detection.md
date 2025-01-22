@@ -1,5 +1,4 @@
 ---
-icon: square-exclamation
 description: Learn how Umbraco Engage handles visitors who use blocker detection.
 ---
 
@@ -19,5 +18,3 @@ If you include the script one of the following events is sent:
 * Otherwise, the following event is sent: `umbEngage("send", "event", "Tracking", "Allowed", "Google Analytics");`
 
 To see the statistics of this event go to the Analytics section of Umbraco Engage and open the 'Events' report. Look for the category with the name 'Tracking'.
-
-![]()

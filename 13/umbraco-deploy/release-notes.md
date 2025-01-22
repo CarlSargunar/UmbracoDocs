@@ -1,6 +1,7 @@
 ---
 description: >-
-  Get an overview of the things changed and fixed in each version of Umbraco Deploy.
+  Get an overview of the things changed and fixed in each version of Umbraco
+  Deploy.
 ---
 
 # Release notes
@@ -16,6 +17,30 @@ If you are upgrading to a new major version you can find the details about the b
 ## Release History
 
 This section contains the release notes for Umbraco Deploy 13 including all changes for this version.
+
+#### [13.3.2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.3.2) (December 23rd 2024)
+
+* Ensure environment-to-environment actions are executed asynchronously on background job (fixes timeout issues on large deployments) [#179](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/179)
+* Only require default, allowed and master templates and their associated files to exist (avoids schema mismatches on template changes) [156](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/156)
+
+#### [13.3.1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.3.1) (November 29th 2024)
+
+* Update documentation links in management dashboard to include major version in the URL
+* Add `ValidateDependenciesOnImport` setting to management dashboard
+
+#### [13.3.0](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.3.0) (November 21st 2024)
+
+* All items from 13.3.0-rc1
+
+#### [13.3.0-rc1](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.3.0) (November 13rd 2024)
+
+* Add option to include all schema in a workspace export
+* Add option to export from transfer queue
+* Combine migrated grid editor with default Block Grid block configuration (set `RowMinSpan` and `RowMaxSpan` to `1` and `EditorSize` to `medium`)
+* Import on startup
+* Added `ValidateDependenciesOnImport` setting to disable dependency validation on import
+* Fixed issue where content was not saved when transferring variant content with a release date
+* Support flexible environments on Umbraco Cloud (remove requirement for environment types to be Development, Staging or Live)
 
 #### [13.2.2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.2.2) (October 3rd 2024)
 
@@ -77,7 +102,7 @@ This section contains the release notes for Umbraco Deploy 13 including all chan
 #### [13.0.3](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.0.3) (January 16th 2024)
 
 * Added configurable option to avoid overwriting of dictionary items with empty values [#191](https://github.com/umbraco/Umbraco.Deploy.Issues/issues/191)
-    * For more details see the page on [Deploy's settings](./getting-started/deploy-settings.md).
+  * For more details see the page on [Deploy's settings](getting-started/deploy-settings.md).
 * Fixed regression issue with transfer of date values.
 
 #### [13.0.2](https://github.com/umbraco/Umbraco.Deploy.Issues/issues?q=is%3Aissue+is%3Aclosed+label%3Arelease%2F13.0.2) (January 9th 2024)
@@ -150,4 +175,4 @@ This section contains the release notes for Umbraco Deploy 13 including all chan
 
 ## Legacy release notes
 
-You can find the release notes for versions out of support in the [Legacy documentation on Github](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)
+You can find the release notes for versions out of support in the [Legacy documentation on GitHub](https://github.com/umbraco/UmbracoDocs/blob/umbraco-eol-versions/11/umbraco-deploy/release-notes.md) and [Umbraco Deploy Package page](https://our.umbraco.com/packages/developer-tools/umbraco-deploy/)

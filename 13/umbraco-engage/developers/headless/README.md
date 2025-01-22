@@ -6,14 +6,26 @@ description: >-
 
 # Headless
 
-Umbraco Engage has a **Umbraco.Engage.Headless** package that can be installed to integrate with Umbraco 12.0+. Headless Content Delivery API, enabling personalized content, A/B tests, and segmentation.
+Umbraco Engage offers the **Umbraco.Engage.Headless** package for seamless integration with Umbraco 12.0 and later. This package enables access to the Headless Content Delivery API, enabling personalized content, A/B tests, and segmentation.
+
+{% hint style="info" %}
+All Engage Analytics features are supported except:
+
+* Time on page tracking
+* Video tracking (workaround could be to use the Events API)
+* Form tracking
+* Search term tracking (workaround could be to use the Events API)
+* The [Bridging Library for Google Analytics](https://docs.umbraco.com/umbraco-engage/developers/analytics/client-side-events-and-additional-javascript-files/bridging-library-for-google-analytics)
+* The [Bridging Library for Google Tag Manager](../analytics/client-side-events-and-additional-javascript-files/bridging-library-for-google-tag-manager.md)
+* [Google Analytics Blocker Detection](../analytics/client-side-events-and-additional-javascript-files/google-analytics-blocker-detection.md)
+{% endhint %}
 
 ## Requirements
 
-To install Umbraco.Engage.Headless, ensure the following:
+To install Umbraco.Engage.Headless, ensure the following prerequisites:
 
-* Umbraco v12 or higher is required to integrate with the [Content Delivery API](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api).
-* Enable the [Umbraco Content Delivery API](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api#enable-the-content-delivery-api) with the following configuration setting:
+* Umbraco v13 is required to integrate with the [Content Delivery API](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api).
+* Enable the [Umbraco Content Delivery API](https://docs.umbraco.com/umbraco-cms/reference/content-delivery-api#enable-the-content-delivery-api) by adding the following configuration setting in the `appsettings.json` file:
 
 ```json
 {
@@ -31,9 +43,9 @@ To install Umbraco.Engage.Headless, ensure the following:
 
 To install the Umbraco Engage Headless API, follow these steps:
 
-1. Install the Umbraco.Engage.Headless package:
+1. Install the `Umbraco.Engage.Headless` package:
 
-* **Using an IDE:** Install the Umbraco.Engage.Headless package from NuGet in Visual Studio, JetBrains Rider.
+* **Using an IDE:** Install the `Umbraco.Engage.Headless` package from NuGet in Visual Studio or JetBrains Rider.
 * **Using the command line:**
   * Navigate to your Umbraco website root folder in your terminal.
   * Run the following command:
@@ -62,4 +74,6 @@ builder.CreateUmbracoBuilder()
 
 3. Rebuild and run your site.
 4. Navigate to **/umbraco/swagger** in your browser.
-5. From the top right definition dropdown, check for the **Umbraco Engage Marketing API.**
+5. Check for the **Umbraco Engage API** from the top right definition dropdown.
+
+![Umbraco Engage API](../../.gitbook/assets/umbraco-engage-api.png)

@@ -2,7 +2,8 @@
 
 * [What is Umbraco Cloud?](README.md)
 * [Frequently asked questions](frequently-asked-questions.md)
-* [Security](security.md)
+* [Security](security/README.md)
+  * [Web Application Firewall](security/web-application-firewall.md)
 * [Sustainability Best Practices](https://docs.umbraco.com/sustainability-best-practices/)
 
 ## Getting Started
@@ -41,6 +42,7 @@
     * [New Certificate Authority for custom hostnames](set-up/project-settings/manage-hostnames/ca-record-migration.md)
     * [Rewrite rules](set-up/project-settings/manage-hostnames/rewrites-on-cloud.md)
     * [Custom Certificates](set-up/project-settings/manage-hostnames/security-certificates.md)
+  * [Management API Security](set-up/project-settings/management-api-security.md)
   * [Umbraco CI/CD Flow](set-up/project-settings/umbraco-cicd/README.md)
     * [Cloud API For CI/CD Flow](set-up/project-settings/umbraco-cicd/UmbracoCloudApi.md)
     * [Configuring a CI/CD pipeline](set-up/project-settings/umbraco-cicd/samplecicdpipeline/README.md)
@@ -58,6 +60,7 @@
 * [Private NuGet Feed on Umbraco Cloud](set-up/private-nuget-feed.md)
 * [Going Live](set-up/going-live.md)
 * [Media](set-up/media.md)
+* [External Login Providers](set-up/external-login-providers.md)
 * [Azure Blob Storage](set-up/azure-blob-storage/README.md)
   * [Connect to Azure Storage Explorer to upload files manually](set-up/azure-blob-storage/connect-to-azure-storage-explorer.md)
   * [Connect and Upload Files Programmatically to Azure Blob Storage](set-up/azure-blob-storage/connect-programatically-to-azure-storage.md)

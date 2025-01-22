@@ -4,7 +4,9 @@ description: How to use the TextBox property editors in Umbraco CMS.
 
 # Textbox
 
-`Alias: Umbraco.Textbox`
+`Schema Alias: Umbraco.TextBox`
+
+`UI Alias: Umb.PropertyEditorUi.TextBox`
 
 `Returns: String`
 
@@ -53,7 +55,7 @@ Textbox is an HTML input control for text. It can be configured to have a fixed 
 
 ## Add values programmatically
 
-See the example below to see how a value can be added or changed programmatically. To update a value of a property editor you need the [Content Service](https://apidocs.umbraco.com/v14/csharp/api/Umbraco.Cms.Core.Services.ContentService.html).
+See the example below to see how a value can be added or changed programmatically. To update a value of a property editor you need the [Content Service](https://apidocs.umbraco.com/v15/csharp/api/Umbraco.Cms.Core.Services.ContentService.html).
 
 {% hint style="info" %}
 The example below demonstrates how to add values programmatically using a Razor view. However, this is used for illustrative purposes only and is not the recommended method for production environments.
@@ -90,6 +92,8 @@ Although the use of a GUID is preferable, you can also use the numeric ID to get
 ```
 
 If Modelsbuilder is enabled you can get the alias of the desired property without using a magic string:
+
+{% include "../../../../.gitbook/includes/obsolete-warning-ipublishedsnapshotaccessor.md" %}
 
 ```csharp
 @using Umbraco.Cms.Core.PublishedCache;

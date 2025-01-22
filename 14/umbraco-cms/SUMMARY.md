@@ -73,7 +73,6 @@
       * [Block Editors](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/block-editor/README.md)
         * [Block Grid](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/block-editor/block-grid-editor.md)
         * [Block List](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/block-editor/block-list-editor.md)
-        * [Configuring Block Editor Label Properties](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/block-editor/label-property-configuration.md)
       * [Dropdown](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/dropdown/README.md)
       * [Rich Text Editor](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/rich-text-editor/README.md)
         * [Rich Text Editor Configuration](fundamentals/backoffice/property-editors/built-in-umbraco-property-editors/rich-text-editor/configuration.md)
@@ -136,7 +135,7 @@
   * [Circular Dependencies](implementation/services/circular-dependencies.md)
 * [Unit Testing](implementation/unit-testing.md)
 
-## Customize the Backoffice
+## Customizing
 
 * [Extend and customize the editing experience](customizing/overview.md)
 * [Project Bellissima](customizing/project-bellissima.md)
@@ -177,6 +176,7 @@
     * [Dashboards](customizing/extending-overview/extension-types/dashboard.md)
     * [Entity Actions](customizing/extending-overview/extension-types/entity-actions.md)
     * [Entity Bulk Actions](customizing/extending-overview/extension-types/entity-bulk-actions.md)
+    * [Entity Create Option Action](customizing/extending-overview/extension-types/entity-create-option-action.md)
     * [Trees](customizing/extending-overview/extension-types/tree.md)
     * [Global Context](customizing/extending-overview/extension-types/global-context.md)
     * [Section Sidebar](customizing/extending-overview/extension-types/section-sidebar.md)
@@ -198,7 +198,6 @@
   * [Property Value Converters](customizing/property-editors/property-value-converters.md)
   * [Property Actions](customizing/property-editors/property-actions.md)
   * [Integrate Property Editors](customizing/property-editors/integrate-property-editors.md)
-  * [Build a Block Editor](customizing/property-editors/build-a-block-editor.md)
   * [Tracking References](customizing/property-editors/tracking.md)
   * [Content Picker Value Converter Example](customizing/property-editors/full-examples-value-converters.md)
   * [Property Dataset](customizing/property-editors/property-dataset.md)

@@ -93,7 +93,8 @@ For illustration purposes, the following structure represents the full set of op
       "DisableClientSideValidationDependencyCheck": false,
       "DisableRelationTracking": false,
       "TrackRenderedFormsStorageMethod": "HttpContextItems",
-      "EnableMultiPageFormSettings": true
+      "EnableMultiPageFormSettings": true,
+      "EnableAdvancedValidationRules": false
     },
     "Security": {
       "DisallowedFileUploadExtensions": "config,exe,dll,asp,aspx",
@@ -224,7 +225,7 @@ Here an organization-approved reCAPTCHA score threshold is defined, that can't b
   }
 ```
 
-In order to configure this setting, you will need to know the GUID or alias for the type and the property name for each setting. You can find [these values for the built-in Forms types here](type-details.md).
+In order to configure this setting, you will need to know the GUID or alias for the type and the property name for each setting. You can find [these values for the built-in Forms types her](type-details.md)e.
 
 Take care to not hide any settings that are required for the particular field or workflow type (for example, the `Subject` field for email workflows). If you do that, the item will fail validation when an editor tries to create it.
 
@@ -414,7 +415,7 @@ If recording IPs and your site is behind a proxy, load balancer or CDN, we recom
 
 In Forms 12.1 amends were made to the default theme for Forms that improved accessibility. Specifically we provide the option to use alternative markup for rendering checkbox and radio button lists. These use the more semantically correct `fieldset` and `legend` elements, instead of the previously used `div` and `label`.
 
-Although this semantic markup is preferred, it could be a presentational breaking change for those styling the default theme.  As such we have made this markup improvement optional. You can opt into using it by setting this configuration value to `true`.
+Although this semantic markup is preferred, it could be a presentational breaking change for those styling the default theme. As such we have made this markup improvement optional. You can opt into using it by setting this configuration value to `true`.
 
 In Umbraco 13 this configuration option will be removed and the semantic rendering made the only option.
 
@@ -434,7 +435,7 @@ If you would like to enable this feature, you can set the value of this setting 
 
 ## TrackRenderedFormsStorageMethod
 
-Forms tracks the forms rendered on a page in order that the associated scripts can be placed in a different location within the HTML. Usually this is used to [render the scripts](../rendering-scripts.md)) at the bottom of the page.
+Forms tracks the forms rendered on a page in order that the associated scripts can be placed in a different location within the HTML. Usually this is used to [render the scripts](../rendering-scripts.md) at the bottom of the page.
 
 By default, `HttpContext.Items` is used as the storage mechanism for this tracking.
 
@@ -445,6 +446,15 @@ You can optionally revert to the legacy behavior of using `TempData` by changing
 This setting determines whether [multi-page form settings](../../editor/creating-a-form/form-settings.md#multi-page-forms) are available to editors.
 
 By default the value is `true`. To disable the feature, set the value to `false`.
+
+## EnableAdvancedValidationRules
+
+This setting determines whether [advanced form validation rules](../../editor/creating-a-form/form-advanced.md) are available to editors.
+
+By default, the value is `false`.  This is partly because the feature is only considered for "power users", comfortable with crafting rules using the required JSON syntax. And partly as validating the rules on the client requires an additional front-end dependency.
+
+To make the feature available to editors and include the dependency when using `@Html.RenderUmbracoFormDependencies(Url)`, set the value to `true`.
+
 
 ## Security configuration
 
